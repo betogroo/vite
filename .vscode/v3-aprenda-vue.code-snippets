@@ -1,0 +1,169 @@
+{
+	
+  // VUE
+  "Vue3 Script Setup Complet": {
+    "scope": "vue, html",
+		"prefix": "v3-sfc-complete",
+		"body": [
+			"<script setup lang=\"ts\">",
+			"</script>",
+			"",
+			"<template>",
+			"\t<div></div>",
+			"</template>"
+		]
+	},
+  "Vue3 Script Setup": {
+    "scope": "vue, html",
+		"prefix": "v3-sfc",
+		"body": [
+			"<script setup lang=\"ts\">",
+			"</script>"
+		]
+	},
+  "Vue3 Template": {
+    "scope": "vue, html",
+		"prefix": "v3-template",
+		"body": [
+      "<template>",
+			"\t<div></div>",
+			"</template>"
+		]
+	},
+  "SCSS Scoped":{
+    "scope": "vue, html",
+		"prefix": "v3-scss-scoped",
+		"body" :[
+      "<style lang=\"scss\" scoped></style>"
+		]
+	},
+  "Vue 3 Form Submit Prevent":{
+    "scope": "vue, html",
+		"prefix": "v3-form-submit-prevent",
+		"body" :[
+      "<form @submit.prevent=\"handleSubmit\">",
+        "\t$1",
+      "</form>"
+		]
+	},
+  "Vue DIV v-if":{
+    "scope": "vue, html",
+		"prefix": "v3-div-v-if",
+		"body" :[
+      "<div v-if=\"$1\">$2</ div>",
+		]
+	},
+  "Vue DIV v-else":{
+    "scope": "vue, html",
+		"prefix": "v3-div-v-else",
+		"body" :[
+      "<div v-else>$1</ div>",
+		]
+	},
+
+  // JD / TS
+  "Vue 3 Define Props with Defaults":{
+    "scope": "javascript,typescript",
+		"prefix": "v3-sfc-props-defaults",
+		"body" :[
+      "interface Props {",
+        "${1:prop}: ${2:type}",
+      "}",
+			"const props = withDefaults(defineProps<Props>(), {",
+			"${1:prop}: ${3:value}",
+			"})",
+      ""
+		]
+	},
+  "Vue Computed":{
+    "scope": "javascript,typescript",
+		"prefix": "v3-computed",
+		"body" :[
+      "const ${1:name} = computed(() => {",
+      "\treturn",
+      "})"
+		]
+	},
+  "Vue 3 Define Props":{
+    "scope": "javascript,typescript",
+		"prefix": "v3-sfc-props",
+		"body" :[
+      "interface Props {",
+        "${1:prop}: ${2:type}",
+      "}",
+			"const props = defineProps<Props>()",
+      ""
+		]
+	},
+  "Vue 3 Base Route":{
+    "scope": "javascript,typescript",
+		"prefix": "v3-base-route",
+		"body" :[
+     "{",
+      "\tpath: '$1',",
+      "\tname: '$2',",
+      "\tcomponent: $3,",
+      "\tmeta: {",
+      "\t\trequiresAuth: $4,",
+      "\t\ttitle: '$2'",
+      "\t}",
+      "}"
+		]
+	},
+  "Vue 3 Pinia Store":{
+    "scope": "javascript,typescript",
+		"prefix": "v3-pinia-store",
+		"body" :[
+      "export const useStore = defineStore('${1:id}', {",
+      "\tstate: () => ({}),",
+      "\tgetters: {},",
+      "\tactions: {}",
+      "})"
+		]
+	},
+  "Vue 3 Composable Base":{
+    "scope": "javascript,typescript",
+		"prefix": "v3-composable",
+		"body" :[
+      "const $1 = () => {",
+      "\treturn {  }",
+      "}",
+      "",
+      "export default $1",
+		]
+	},
+  "HANDLE CLICK":{
+    "scope": "javascript,typescript",
+		"prefix": "v3-handle-click",
+		"body" :[
+      "const handleClick = () => {",
+        "console.log(data.value)",
+      "}"
+		]
+	},
+  "HANDLE SUBMIT":{
+    "scope": "javascript,typescript",
+		"prefix": "v3-handle-submit",
+		"body" :[
+      "const handleSubmit = () => {",
+        "console.log(data.value)",
+      "}"
+		]
+	},
+  "Vue 3 Watch":{
+    "scope": "javascript,typescript",
+		"prefix": "v3-watch",
+		"body" :[
+      "watch(() => foo, (newValue, oldValue) => {",
+      "\t$1",
+      "})",
+		]
+	},
+  "Vue 3 On Before Mount":{
+    "scope": "javascript,typescript",
+		"prefix": "v3-onBeforeMount",
+		"body" :[
+      "onBeforeMount(() => {})"
+		]
+	}
+}

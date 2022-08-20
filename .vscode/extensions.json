@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "vue.volar",
+    "streetsidesoftware.code-spell-checker",
+    "dracula-theme.theme-dracula",
+    "dbaeumer.vscode-eslint",
+    "donjayamanne.githistory",
+    "eamodio.gitlens",
+    "lukas-tr.materialdesignicons-intellisense",
+    "pkief.material-icon-theme",
+    "esbenp.prettier-vscode",
+    "sdras.vue-vscode-snippets",
+    "streetsidesoftware.code-spell-checker-portuguese-brazilian"
+  ]
+}
