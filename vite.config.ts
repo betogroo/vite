@@ -1,10 +1,16 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-
-// https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vite-plugin
 import vuetify from 'vite-plugin-vuetify'
+import path from 'path'
+import Components from 'unplugin-vue-components/vite'
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(), vuetify({ autoImport: true })]
+  plugins: [
+    vue(),
+    vuetify({ autoImport: true }),
+    Components({
+      dirs: [path.resolve(__dirname, 'src/components/app')],
+      dts: path.resolve(__dirname, '@types/components.d.ts')
+    })
+  ]
 })
