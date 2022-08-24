@@ -12,5 +12,10 @@ export default defineConfig({
       dirs: [path.resolve(__dirname, 'src/components/app')],
       dts: path.resolve(__dirname, '@types/components.d.ts')
     })
-  ]
+  ],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src')
+    }
+  }
 })
