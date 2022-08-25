@@ -4,7 +4,7 @@
     "scope": "vue, html",
     "prefix": "v3-sfc-complete",
     "body": [
-      "<script setup lang=\"ts\">",
+      "<script setup lang=\"ts\">$1",
       "</script>",
       "",
       "<template>",
@@ -15,7 +15,7 @@
   "Vue3 Script Setup": {
     "scope": "vue, html",
     "prefix": "v3-sfc",
-    "body": ["<script setup lang=\"ts\">", "</script>"]
+    "body": ["<script setup lang=\"ts\">", "$1","</script>"]
   },
   "Vue3 Template": {
     "scope": "vue, html",
@@ -113,7 +113,7 @@
   "HANDLE CLICK": {
     "scope": "javascript,typescript",
     "prefix": "v3-handle-click",
-    "body": ["const handleClick = () => {", "console.log(data.value)", "}"]
+    "body": ["const ${1:handleClick} = () => {", "${2:console.log(data.value)}", "}"]
   },
   "HANDLE SUBMIT": {
     "scope": "javascript,typescript",
