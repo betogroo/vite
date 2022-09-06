@@ -4,7 +4,14 @@ defineEmits(['toggle-drawer'])
 <template>
   <v-app-bar color="primary">
     <v-app-bar-nav-icon @click="$emit('toggle-drawer')"></v-app-bar-nav-icon>
-    <v-app-bar-title>Vue Vite Project</v-app-bar-title>
+    <v-app-bar-title>
+      <router-link
+        class="text-white text-decoration-none"
+        :to="{ name: 'HomeView' }"
+      >
+        Vue Vite Project
+      </router-link>
+    </v-app-bar-title>
     <v-btn icon>
       <v-icon>mdi-dots-horizontal</v-icon>
     </v-btn>
