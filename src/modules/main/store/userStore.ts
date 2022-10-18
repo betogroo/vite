@@ -11,12 +11,12 @@ const users: User[] = [
     email: 'homer@simpsons.com'
   },
   {
-    id: 'posugd6iho',
+    id: 'posugd6iho_GARU',
     email: 'bart@simpsons.com'
   }
 ]
 
-export const useUserStore = defineStore('useStore', {
+export const useUserStore = defineStore('userStore', {
   state: (): State => {
     return {
       users: users as User[]
