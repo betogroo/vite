@@ -16,5 +16,5 @@ watch(
 )
 </script>
 <template>
-  <v-navigation-drawer app v-model="drawerActive"></v-navigation-drawer>
+  <v-navigation-drawer v-model="drawerActive"></v-navigation-drawer>
 </template>
