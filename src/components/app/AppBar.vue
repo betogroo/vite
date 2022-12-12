@@ -12,7 +12,7 @@ defineEmits(['toggle-drawer'])
         Vue Vite Project
       </router-link>
     </v-app-bar-title>
-    <v-btn icon>
+    <v-btn icon="mdi-dots-horizontal">
       <v-icon>mdi-dots-horizontal</v-icon>
     </v-btn>
   </v-app-bar>

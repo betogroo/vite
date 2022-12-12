@@ -11,7 +11,7 @@
     "format": "prettier .  --write"
   },
   "dependencies": {
-    "@mdi/font": "^7.0.96",
+    "@mdi/font": "^5.9.55",
     "pinia": "^2.0.22",
     "roboto-fontface": "*",
     "vue": "^3.2.41",
