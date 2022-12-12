@@ -3,9 +3,9 @@ import '@mdi/font/css/materialdesignicons.css'
 import 'vuetify/styles'
 
 // Vuetify
-import { createVuetify, ThemeDefinition } from 'vuetify'
+import { createVuetify } from 'vuetify'
 
-const myCustomLightTheme: ThemeDefinition = {
+const myCustomLightTheme = {
   dark: false,
   colors: {
     background: '#FFFFFF',
